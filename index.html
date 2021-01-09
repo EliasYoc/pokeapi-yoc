@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+    <main>
+        <div class="container-pokemon">
+            <h2>Lista Pokemón</h2>
+            <div class="content-pokemon">
+                
+            </div>
+        </div>
+        <div class="container-pokedex">
+            <div class="content-pokedex">
+                <div class="pokedex-portada">
+                    
+                </div>
+                <div class="pokedex-info">
+                    <div class="pokedex-bg-img">
+                        
+                    </div>
+                    <h3>nombre <span>0 hp</span></h3>
+                    <p>0 exp</p>
+                    <div class="pokedex-stats">
+                        <div class="pokedex-stat-text">
+                            <h4>00</h4>
+                            <p>ataque</p>
+                        </div>
+                        <div class="pokedex-stat-text">
+                            <h4>00</h4>
+                            <p>ataque especial</p>
+                        </div>
+                        <div class="pokedex-stat-text">
+                            <h4>00</h4>
+                            <p>defensa</p>
+                        </div>
+                    </div>
+                    <div class="pokedex-stats">
+                        <div class="pokedex-stat-text">
+                            <h4>00</h4>
+                            <p>peso</p>
+                        </div>
+                        <div class="pokedex-stat-text">
+                            <h4>00</h4>
+                            <p>altura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <template id="template-pokemon">
+        <div class="card-pokemon">
+            <div class="card-bg-img">
+                <img src="" alt="pokemon">
+            </div>
+            <div class="card-info">
+                <p id="nombre"></p>
+                <span>Fire</span><span></span>
+            </div>
+        </div>
+    </template>
+    <template id="template-pokedex">
+        <div class="content-pokedex">
+            <div class="pokedex-portada">
+                
+            </div>
+            <div class="pokedex-info">
+                <div class="pokedex-bg-img">
+                    <img src="img/004Charmander.png" alt="">
+                </div>
+                <h3>bulbasauraaaa <span>0 hp</span></h3>
+                <p>0 exp</p>
+                <div class="pokedex-stats">
+                    <div class="pokedex-stat-text">
+                        <h4>00</h4>
+                        <p>ataque</p>
+                    </div>
+                    <div class="pokedex-stat-text">
+                        <h4>00</h4>
+                        <p>ataque especial</p>
+                    </div>
+                    <div class="pokedex-stat-text">
+                        <h4>00</h4>
+                        <p>defensa</p>
+                    </div>
+                </div>
+                <div class="pokedex-stats">
+                    <div class="pokedex-stat-text">
+                        <h4>00</h4>
+                        <p>peso</p>
+                    </div>
+                    <div class="pokedex-stat-text">
+                        <h4>00</h4>
+                        <p>altura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script src="js/main.js" ></script>
+</body>
+
+</html>
