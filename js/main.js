@@ -2,7 +2,10 @@ const $templatePoke = document.getElementById("template-pokemon").content,
     $fragment = document.createDocumentFragment(),
     $contentPoke=document.querySelector(".content-pokemon"),
     $templatePokedex = document.getElementById("template-pokedex").content,
-    $pokedexContainer = document.querySelector(".container-pokedex");
+    $pokedexContainer = document.querySelector(".container-pokedex"),
+
+    $loadingPanel = document.querySelector(".panel-loading"),
+    $circleLoading = document.querySelector(".loading-circle");
 
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -25,7 +28,10 @@ const fetchPokemon = async ()=>{
         }
         //console.log(arrPokemones)
         pintarCards(objPokemones);
-        console.warn("cargado")
+        //console.warn("cargado")
+        $loadingPanel.classList.add("desactive");
+        $circleLoading.classList.add("desactive");
+        $circleLoading.style.display = "none";
         // console.log(objPokemones);
         //verPokemon(arrPokemones)
         $contentPoke.addEventListener("click",(e)=>{
